@@ -1,0 +1,43 @@
+.NavBarContainer{
+    background: #008080;
+    color: #000100;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px;
+}
+.NavBarLogo{
+    height: 75px;
+}
+.linkedContainer{
+    background-color: #FFD700	;
+      border: 1px solid black;
+      border-radius: 5px;
+      list-style: none;
+      height: 40px;
+      width: 140px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      color: #000100;
+      font-weight: 700;
+      font-size: 15px;
+      cursor: pointer;
+}
+.NavbarCart{
+    width: 30px;
+    height: 30px;
+}
+.cartwidget{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}

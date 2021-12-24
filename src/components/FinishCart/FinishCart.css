@@ -1,0 +1,15 @@
+.containerFinish{
+    background-color: #E0FFFF;
+    color: #2f4f4f;
+    width: 170px;
+}
+.containerContinue{
+    color: #E0FFFF;
+    background-color: #2f4f4f;
+    width: 170px;
+}
+.finishContainer{
+    display: flex;
+    gap: 5px;
+    margin-top: 5px;
+}

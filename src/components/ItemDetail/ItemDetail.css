@@ -1,0 +1,13 @@
+.productDetailContainer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #FF8C00;
+    border: 1px solid black;
+    width: 1000px;
+    margin: 20px;
+    padding: 5px;
+}
+.productDetailImage{
+    width: 600px;
+    height: 600px;
+}
