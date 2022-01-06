@@ -9,7 +9,11 @@ import Logitech_G502 from '../assets/img/products/LOGITECH-G502-HERO.png'
 import Apex_Pro_TKL from '../assets/img/products/APEX_PRO_TKL.png'
 import Cloud_Flight from '../assets/img/products/HYPERX_CLOUD_FLIGHT.png'
 
-const productosdata = [
+import plane from '../assets/img/icons/deliver/plane.png'
+import compras from '../assets/img/icons/deliver/compras.png'
+import payment from '../assets/img/icons/deliver/payment.png'
+
+export const productosdata = [
     {
         "id": "mobo1",
         "category": "componentes",
@@ -131,4 +135,21 @@ const productosdata = [
         "stock": 3
     }
   ]
-export default productosdata;
+
+export const deliverInfo = [
+    {
+        title: "Envíos",
+        paragraph: "Los envíos son totalmente gratis estos te llegan directamente a tu direccion de entrega y tiene una duración de llegada de 6 a 10 días hábiles.",
+        image: plane
+    },
+    {
+        title: "Compra segura",
+        paragraph: "Tu compra está completamente segura por el servicio de seguridad de la página dandote una mayor seguridad y actualizaciones de tú pedido.",
+        image: compras
+    },
+    {
+        title: "Pagos",
+        paragraph: "Puedes hacer el pago en una entidad de pagos o mediante tu propia tarjeta de débito o crédito como mayor gustes.",
+        image: payment
+    }
+]

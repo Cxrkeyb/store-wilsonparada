@@ -8,20 +8,23 @@ import CartView from './containers/CartView/CartView'
 import Footer from './containers/Footer/Footer';
 import CartContextProvider from './context/CartContext';
 import Checkout from './containers/Checkout/Checkout';
+import pruebas from './containers/Pruebas/pruebas';
+import DeliverContainer from './containers/DeliverContainer/DeliverContainer';
 
 function App(){
   return (
     <CartContextProvider>
       <BrowserRouter>
         <NavBar />
-        <div className='slider'></div>
         <Switch>
           <Route exact={true} path="/" component={ProductPage}/>
+          <Route path="/pruebas" component={pruebas}/>
           <Route path="/category/:categoryId" component={ProductPage}/>
           <Route path="/item/:id" component={DetailPage}/>
           <Route path="/cart" component={CartView}/>
           <Route path="/checkout" component={Checkout} />
         </Switch>
+        <DeliverContainer />
         <Footer />
       </BrowserRouter>
     </CartContextProvider>

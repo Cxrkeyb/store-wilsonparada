@@ -1,0 +1,10 @@
+.deliverContainer{
+    margin: 40px;
+    height: 550px;
+    background-color: #F0E68C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
+    padding: 20px;
+}

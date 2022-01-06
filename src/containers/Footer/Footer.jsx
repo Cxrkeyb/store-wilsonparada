@@ -5,6 +5,7 @@ export default function Footer() {
     return (
         <div className='footerContainer'>
             <a className='socialMedia' href='https://www.linkedin.com/in/wilsonparada/' target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <span>Derechos reservados a Wilson Sneyder Parada Obando</span>
         </div>
     )
 }

@@ -1,0 +1,21 @@
+.order{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #4682B4;
+    width: 1000px;
+    padding: 30px 20px;
+    border-radius: 20px;
+}
+.orderContainer{
+    height: 600px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.titleOrder{
+    color: white;
+    font-size: 32px;
+    -webkit-text-stroke: 1.5px black;
+}

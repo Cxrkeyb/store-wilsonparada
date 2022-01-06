@@ -8,6 +8,7 @@ import './CartView.css'
 
 export default function CheckoutCart() {
     const {cart, isInCart, removeItem, modifyItem, changeCartCounter, emptyCart, totalPriceCart} = useContext(CartContext)
+
     return (
         <div className='cartContainer'>`
         {/* Detecta si hay algo dentro del carrito */}

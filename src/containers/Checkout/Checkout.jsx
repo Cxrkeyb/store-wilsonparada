@@ -13,24 +13,13 @@ export default function Checkout() {
     const { cart, totalPriceCart, emptyCart, isInCart, emptyQuantity } = useContext(CartContext)
     const [orderId, setOrderId] = useState(null)
     const [loading, setLoading] = useState(false)
+    const [errorItems, setErrorItems] = useState([])
 
-    const [values, setValues] = useState({
-        nombre: "", 
-        email: "", 
-        tel: "",
-        direccion: ""
-    })
-
-    const handleInputChange = (e) => {
-        console.log(e.target.value)
-        setValues({
-            ...values, 
-            [e.target.name]: e.target.value 
-        })
+    const goToCart = () => {
+        setErrorItems([])
     }
 
-    const handleSubmit = (e) => {
-        e.preventDefault()
+    const handleSubmit = (values) => {
         const order = {
             buyer: values,
             items: cart,
@@ -66,11 +55,8 @@ export default function Checkout() {
                             setLoading(false)
                         })
                 }else{
-                    console.log(outOfStock)
-                    console.log("error")
+                    setErrorItems(outOfStock)
                     setLoading(false)
-                    // Modal diciendo que hay productos sin stock
-                    // Volver al carrito
                 }
             })
         }
@@ -79,7 +65,7 @@ export default function Checkout() {
         /* Detectar si la compra se finalizó */
         orderId ? <CheckoutFinish orderId={orderId}/>:
         // Detectar si el carrito está vacío
-        isInCart() ? loading ? <Loader /> : <CheckoutForm handleSubmit={handleSubmit} handleInputChange={handleInputChange} values={values}/>
+        isInCart() ? loading ? <Loader /> : <CheckoutForm goToCart={goToCart} errorItems={errorItems} handleSubmit={handleSubmit} />
         // Si no hay nada en el carrito mostrar CartEmpty para volver al home
         :  <CartEmpty />
     )

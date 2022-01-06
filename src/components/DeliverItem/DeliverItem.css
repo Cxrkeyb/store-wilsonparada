@@ -1,0 +1,22 @@
+.deliverInfo{
+    border: 5px solid black;
+    width: 280px;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+}
+.deliverIcon{
+    width: 100px;
+}
+.deliverParagraph{
+    font-size: 20px;
+    font-weight: 500;
+    height: 200px;
+}
+.deliverTitle{
+    font-size: 26px;
+    font-weight: 700;
+}
