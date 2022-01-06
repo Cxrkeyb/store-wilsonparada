@@ -25,7 +25,6 @@ export default function ItemListContainer(){
             .finally( () => {
                 setLoading(false)
             })
-        
     }, [categoryId])
     return (
         <div className='containerItemList'>
