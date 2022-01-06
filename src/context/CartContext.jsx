@@ -38,6 +38,7 @@ export default function CartContextProvider({children}) {
     }
     const emptyCart = () => {
         setCart([])
+        setQuantity(0)
     }
     const isInCart = () => {
         // Detectar si hay productos en el carrito
