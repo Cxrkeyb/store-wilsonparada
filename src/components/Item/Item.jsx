@@ -3,7 +3,7 @@ import './Item.css';
 import {useHistory} from 'react-router-dom';
 
 export default function Item(product) {
-        let history = useHistory();
+    let history = useHistory();
     return (
         <div onClick={()=> history.push(`/item/${product.id}`)}className="productContainer">
             <img className="productImage" src={product.photo} alt={`Imagen de ${product.title}`}  />

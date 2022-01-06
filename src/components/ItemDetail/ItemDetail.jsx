@@ -1,4 +1,5 @@
-import React, {useState} from 'react'
+import React, {useState, useContext} from 'react'
+import { CartContext } from '../../context/CartContext';
 import FinishCart from '../FinishCart/FinishCart';
 import ItemCount from '../ItemCount/ItemCount'
 import './ItemDetail.css'
@@ -6,10 +7,9 @@ import './ItemDetail.css'
 export default function ItemDetail({product}) {
 
     const [quantity, setQuantity] = useState(0);
-    const [addToCart, setAddToCart] = useState(false);
+    const {productCheck} = useContext(CartContext);
 
     const [stock, setStock] = useState(product.stock);
-
     return (
         <div className='productDetailContainer'>
             <div><img alt={product.title} src={product.photo} className='productDetailImage'/></div>
@@ -23,7 +23,7 @@ export default function ItemDetail({product}) {
                 </ul>
                 <span>El stock disponible es: {stock}</span>
                 {
-                    addToCart ? <FinishCart /> : <ItemCount setAddToCart={setAddToCart} quantity={quantity} setQuantity={setQuantity} price={product.price} stock={stock} setStock={setStock} />
+                    productCheck(product.id) ? <FinishCart />  : <ItemCount product={product} quantity={quantity} setQuantity={setQuantity} stock={stock} setStock={setStock} />
                 }
             </div>
         </div>

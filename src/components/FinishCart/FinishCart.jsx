@@ -6,7 +6,7 @@ export default function FinishCart() {
     return (
         <div className='finishContainer'>
             <Link to={"/cart"}><div className='containerFinish addToCartContainer'>Finalizar Compra</div></Link>
-            <Link exact to={"/"}><div className='containerContinue addToCartContainer'>Seguir Comprando</div></Link>
+            <Link exact="true" to={"/"}><div className='containerContinue addToCartContainer'>Seguir Comprando</div></Link>
         </div>
     )
 }

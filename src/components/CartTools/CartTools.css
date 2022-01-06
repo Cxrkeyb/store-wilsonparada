@@ -1,0 +1,30 @@
+.btnTools{
+    width: 300px;
+    height: 40px;
+    font-weight: 700;
+    font-size: 18px;
+    border: 1px solid black	;
+    border-radius: 25px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btnDelete{
+    background-color: red;
+    color: white;
+}
+.btnFinish{
+    background-color: #FFD700;
+    color: #2F4F4F;
+}
+.cartToolsContainer{
+    background-color: #FFA500		;
+    border: 2px solid black;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 20px;
+    gap: 20px;
+}

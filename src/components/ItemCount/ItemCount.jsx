@@ -1,8 +1,11 @@
-import React, {Fragment} from 'react'
+import React, {Fragment, useContext} from 'react'
 import Counter from '../Counter/Counter'
+import {CartContext} from '../../context/CartContext'
 import './ItemCount.css'
 
-export default function ItemCount({price, stock, setStock , setQuantity , quantity, setAddToCart}) {
+export default function ItemCount({product, stock, setStock , setQuantity , quantity}) {
+
+    const {isInCart, addItem} = useContext(CartContext)
 
     const increaseC = () => {
         if(stock > 0){
@@ -18,16 +21,14 @@ export default function ItemCount({price, stock, setStock , setQuantity , quanti
     }
     function addToCart(){
         if(quantity > 0){
-            setAddToCart(true)
-        }else{
-            // Modal diciendo que no seleccionó una cantidad
+            addItem(product, quantity)
+            isInCart()
         }
     }
-
     return (
         <Fragment>
-            <Counter quantity={quantity}  increaseCounter={increaseC} decreaseCounter={decreaseC} />
-            <span className='counterNumber'>${(price * quantity).toFixed(2)}</span>
+            <Counter stock={stock} quantity={quantity}  increaseCounter={increaseC} decreaseCounter={decreaseC} />
+            <span className='counterNumber'>${(product.price * quantity).toFixed(2)}</span>
             <button className='addToCartContainer addToCart' onClick={addToCart}>Agregar al carrito</button>
         </Fragment>
         

@@ -3,8 +3,9 @@ import './Loader.css'
 
 export default function Loader() {
     return (
-        <div>
-            Cargando...
+        <div className='loadingContainer'>
+            <div className='spinner'>
+            </div>
         </div>
     )
 }

@@ -4,3 +4,12 @@
 .counterCart{
     font-size: 22px;
 }
+.cartwidget{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    color: black;
+}

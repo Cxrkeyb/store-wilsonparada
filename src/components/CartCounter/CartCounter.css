@@ -1,0 +1,32 @@
+.cartCounter{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 200px;
+    gap: 5px;
+    align-items: center;
+}
+.cartBtns{
+    width: 30px;
+    height: 30px;
+    border: 3px solid black;
+    font-weight: 700;
+    font-size: 21px;
+    cursor: pointer;
+}
+.btnAdd{
+    color: green;
+}
+.btnRemove{
+    color: red;
+}
+.cartBtnsContainer{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.productName{
+    font-weight: 700;
+    font-size: 21px;
+    margin-bottom: 20px;
+}
