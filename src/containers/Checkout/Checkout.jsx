@@ -10,7 +10,7 @@ import CheckoutForm from '../../components/CheckoutForm/CheckoutForm'
 
 export default function Checkout() {
 
-    const { cart, totalPriceCart, emptyCart, isInCart, emptyQuantity } = useContext(CartContext)
+    const { cart, totalPriceCart, emptyCart, isInCart, emptyQuantity, deletelocalStorageItem } = useContext(CartContext)
     const [orderId, setOrderId] = useState(null)
     const [loading, setLoading] = useState(false)
     const [errorItems, setErrorItems] = useState([])
@@ -53,6 +53,7 @@ export default function Checkout() {
                             emptyQuantity()
                             emptyCart()
                             setLoading(false)
+                            deletelocalStorageItem()
                         })
                 }else{
                     setErrorItems(outOfStock)
