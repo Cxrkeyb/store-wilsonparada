@@ -1,0 +1,11 @@
+.error404image{
+    width: 1000px;
+}
+.containerError{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+    flex-direction: column;
+    gap: 20px;
+}

@@ -4,10 +4,9 @@ import {deliverInfo} from '../../services/data'
 import './DeliverContainer.css'
 
 export default function DeliverContainer() {
-    console.log(deliverInfo)
     return (
         <div className='deliverContainer'>
-            {deliverInfo.map((infoItem) => <DeliverItem infoItem={infoItem} />)}
+            {deliverInfo.map((infoItem) => <DeliverItem key={infoItem.id} infoItem={infoItem} />)}
         </div>
     )
 }

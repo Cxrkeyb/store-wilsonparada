@@ -140,16 +140,19 @@ export const deliverInfo = [
     {
         title: "Envíos",
         paragraph: "Los envíos son totalmente gratis estos te llegan directamente a tu direccion de entrega y tiene una duración de llegada de 6 a 10 días hábiles.",
-        image: plane
+        image: plane,
+        id: "planedeliver"
     },
     {
         title: "Compra segura",
         paragraph: "Tu compra está completamente segura por el servicio de seguridad de la página dandote una mayor seguridad y actualizaciones de tú pedido.",
-        image: compras
+        image: compras,
+        id: "comprasdeliver"
     },
     {
         title: "Pagos",
         paragraph: "Puedes hacer el pago en una entidad de pagos o mediante tu propia tarjeta de débito o crédito como mayor gustes.",
-        image: payment
+        image: payment,
+        id: "pagosdeliver"
     }
 ]
