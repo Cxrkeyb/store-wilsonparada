@@ -1,4 +1,5 @@
 # Proyecto CxrkStore 
+![Alt text](https://ibb.co/02v11rm "Optional title")
 ## Este fue creado por Wilson Parada
 ### Proyecto final en Coderhouse
 Tienda basada en la venta de componentes y perifericos de computadores.
