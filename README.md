@@ -1,5 +1,5 @@
 # Proyecto CxrkStore 
-![Alt text](https://ibb.co/02v11rm "Optional title")
+<a href="https://ibb.co/02v11rm"><img src="https://i.ibb.co/T2dJJtY/Whats-App-Image-2022-01-08-at-3-13-54-PM.jpg" alt="Whats-App-Image-2022-01-08-at-3-13-54-PM" border="0"></a>
 ## Este fue creado por Wilson Parada
 ### Proyecto final en Coderhouse
 Tienda basada en la venta de componentes y perifericos de computadores.
