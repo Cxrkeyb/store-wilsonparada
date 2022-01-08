@@ -1,0 +1,6 @@
+.containerSlideShow{
+    text-align: center;
+    display: flex;
+    width: 1000px;
+    flex-wrap: nowrap;
+}

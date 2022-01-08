@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Error404 from '../../assets/img/icons/Error404/mario-bros-404-page.jpg'
+import Error404 from '../../assets/img/Error404/mario-bros-404-page.jpg'
 import './PageNotFound.css'
 
 export default function PageNotFound() {
