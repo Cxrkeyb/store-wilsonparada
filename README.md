@@ -3,7 +3,7 @@
 <h2>Este fue creado por Wilson Parada</h2>
 <h3>Proyecto final en Coderhouse</h3>
 <span>Tienda basada en la venta de componentes y perifericos de computadores.<span>
-<span>Link de el proyecto: <a href="https://cxrkstore.netlify.app">Ir al sitio web</a><span>
+<span>Link de el proyecto: <a href="https://cxrkstore.netlify.app" target="_blank">Ir al sitio web</a><span>
   <h3>Herramientas utilizadas</h3>
   <ul>
     <li>React.js: Se utilizó para la creación de componentes, containers y crear la estructura de nuestro sitio.</li>
